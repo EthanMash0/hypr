@@ -63,3 +63,16 @@ hl.window_rule({
     },
     center = true,
 })
+
+hl.window_rule({
+    name = "gmail-window-size",
+    match = {
+        class = "^chrome-mail\\.google\\.com__mail_u_0_-Default$",
+    },
+
+    size = {
+        "monitor_w * 0.67",
+        "monitor_h * 0.66",
+    },
+    center = true,
+})

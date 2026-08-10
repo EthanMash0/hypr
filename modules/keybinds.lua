@@ -32,7 +32,7 @@ end
 
 -- Example special workspace (scratchpad)
 -- hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
+-- hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- Scroll through existing workspaces with mainMod + scroll
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
@@ -68,7 +68,7 @@ hl.bind(mainMod .. " + SHIFT + C", hl.dsp.send_shortcut({ mods = "CTRL", key = "
 hl.bind(mainMod .. " + SHIFT + V", hl.dsp.send_shortcut({ mods = "SHIFT", key = "INSERT" }),  { repeating = true })
 
 -- Screenshot
-hl.bind(mainMod .. " + SHIFT + 4", hl.dsp.exec_cmd("grim -g '$(slurp -d)' - | wl-copy"))
+hl.bind(mainMod .. " + SHIFT + P", hl.dsp.exec_cmd('grim -g "$(slurp -d)" - | wl-copy'))
 
 -- Window cycling
 hl.bind(mainMod .. " + Tab", function()
